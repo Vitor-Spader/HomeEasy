@@ -34,36 +34,28 @@
 		}
 		public void switchState(int pinNumber)
 		{
-			var pinGpio = outputs[pinNumber];
-			PinValue currentValue = controller.Read(pinGpio.);
-			PinValue newValue = (currentValue == PinValue.High) ? PinValue.Low : PinValue.High;
-
-			controller.Write(pin, newValue);
-
-			Console.WriteLine($"Lamp is {(newValue == PinValue.High ? "on" : "off")}");
-
-			using (GpioController controller = new GpioController())
+            if (!outputs.ContainsKey(pinNumber))
+            {
+				throw new KeyNotFoundException();
+            }
+			controller.Write(outputs[pinNumber].PinNumber, 
+				controller.Read(outputs[pinNumber].PinNumber) == PinValue.High ? PinValue.Low : PinValue.High);
+		}
+		public void OnState(int pinNumber)
+		{
+			if (!outputs.ContainsKey(pinNumber))
 			{
-				int lampPin = 17; // GPIO pin number
-
-				controller.OpenPin(lampPin, PinMode.Output);
-
-				while (true)
-				{
-					Console.ReadLine(); // Wait for Enter key press
-					ToggleLamp(controller, lampPin);
-				}
+				throw new KeyNotFoundException();
 			}
-
-			static void ToggleLamp(GpioController controller, int pin)
+			controller.Write(outputs[pinNumber].PinNumber, PinValue.High);
+		}
+		public void OffState(int pinNumber)
+		{
+			if (!outputs.ContainsKey(pinNumber))
 			{
-				PinValue currentValue = controller.Read(pin);
-				PinValue newValue = (currentValue == PinValue.High) ? PinValue.Low : PinValue.High;
-
-				controller.Write(pin, newValue);
-
-				Console.WriteLine($"Lamp is {(newValue == PinValue.High ? "on" : "off")}");
+				throw new KeyNotFoundException();
 			}
+			controller.Write(outputs[pinNumber].PinNumber, PinValue.Low);
 		}
 	}
 }
