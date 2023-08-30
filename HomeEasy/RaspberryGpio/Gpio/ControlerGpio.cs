@@ -1,20 +1,17 @@
 ﻿namespace HomeEasy.RpiAPI.Model
 {
-	using Microsoft.AspNetCore.Components;
 	using System.Collections.Generic;
-	using System.ComponentModel.DataAnnotations;
 	using System.Device.Gpio;
-	using System.Diagnostics.Eventing.Reader;
-	using System.Net.NetworkInformation;
 
-	public class Node
+	//This class control the gpio, inputs and outputs
+	public class ControlerGpio
 	{
 		private readonly Dictionary<int, GpioPin> inputs;
 		private readonly Dictionary<int, GpioPin> outputs;
 		private GpioController controller;
 
 
-		public Node(int[] _inputs, int[] _outputs, int startRangeInput, int startRangeOutput) 
+		public ControlerGpio(int[] _inputs, int[] _outputs, int startRangeInput, int startRangeOutput) 
 		{
 			inputs = new Dictionary<int, GpioPin>();
 			outputs = new Dictionary<int, GpioPin>();
@@ -35,27 +32,31 @@
 		public void switchState(int pinNumber)
 		{
             if (!outputs.ContainsKey(pinNumber))
-            {
 				throw new KeyNotFoundException();
-            }
+
 			controller.Write(outputs[pinNumber].PinNumber, 
 				controller.Read(outputs[pinNumber].PinNumber) == PinValue.High ? PinValue.Low : PinValue.High);
 		}
 		public void OnState(int pinNumber)
 		{
 			if (!outputs.ContainsKey(pinNumber))
-			{
 				throw new KeyNotFoundException();
-			}
+
 			controller.Write(outputs[pinNumber].PinNumber, PinValue.High);
 		}
 		public void OffState(int pinNumber)
 		{
 			if (!outputs.ContainsKey(pinNumber))
-			{
 				throw new KeyNotFoundException();
-			}
+			
 			controller.Write(outputs[pinNumber].PinNumber, PinValue.Low);
+		}
+		public bool GetState(int pinNumber)
+		{
+			if (!inputs.ContainsKey(pinNumber))
+				throw new KeyNotFoundException();
+			//Return true if the input is active
+			return controller.Read(inputs[pinNumber].PinNumber) == PinValue.High;
 		}
 	}
 }

@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "frIRbzX9nYgTzvKXMgNmd120AvF1DdiotITi+iplX4g=",
+  "Source": "HomeEasy.RpiAPI",
+  "BasePath": "_content/HomeEasy.RpiAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

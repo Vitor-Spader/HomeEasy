@@ -1,0 +1,21 @@
+﻿<Window x:Class="GerenciadorDesktop.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GerenciadorDesktop"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <DockPanel HorizontalAlignment="Left" Height="434" LastChildFill="False" VerticalAlignment="Center" Width="78">
+            <Button Content="Button" DockPanel.Dock="Top" Height="60"/>
+            <Button Content="Button" DockPanel.Dock="Top" Height="60"/>
+            <Button Content="Button" DockPanel.Dock="Top" Height="60"/>
+            <Button Content="Button" DockPanel.Dock="Top" Height="60"/>
+            <Button Content="Button" DockPanel.Dock="Top" Height="60"/>
+            <Button Content="Button" DockPanel.Dock="Top" Height="60"/>
+            <Button Content="Button" DockPanel.Dock="Top" Height="60"/>
+        </DockPanel>
+        <Image HorizontalAlignment="Left" Height="432" Margin="80,0,0,0" VerticalAlignment="Top" Width="719"/>
+    </Grid>
+</Window>

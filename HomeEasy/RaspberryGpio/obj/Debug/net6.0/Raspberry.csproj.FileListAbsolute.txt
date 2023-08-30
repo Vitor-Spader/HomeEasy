@@ -1,0 +1,12 @@
+C:\Users\vitor\Documents\C#\HomeEasy\HomeEasy\RaspberryGpio\bin\Debug\net6.0\Raspberry.deps.json
+C:\Users\vitor\Documents\C#\HomeEasy\HomeEasy\RaspberryGpio\bin\Debug\net6.0\Raspberry.dll
+C:\Users\vitor\Documents\C#\HomeEasy\HomeEasy\RaspberryGpio\bin\Debug\net6.0\Raspberry.pdb
+C:\Users\vitor\Documents\C#\HomeEasy\HomeEasy\RaspberryGpio\obj\Debug\net6.0\Raspberry.csproj.AssemblyReference.cache
+C:\Users\vitor\Documents\C#\HomeEasy\HomeEasy\RaspberryGpio\obj\Debug\net6.0\Raspberry.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vitor\Documents\C#\HomeEasy\HomeEasy\RaspberryGpio\obj\Debug\net6.0\Raspberry.AssemblyInfoInputs.cache
+C:\Users\vitor\Documents\C#\HomeEasy\HomeEasy\RaspberryGpio\obj\Debug\net6.0\Raspberry.AssemblyInfo.cs
+C:\Users\vitor\Documents\C#\HomeEasy\HomeEasy\RaspberryGpio\obj\Debug\net6.0\Raspberry.csproj.CoreCompileInputs.cache
+C:\Users\vitor\Documents\C#\HomeEasy\HomeEasy\RaspberryGpio\obj\Debug\net6.0\Raspberry.dll
+C:\Users\vitor\Documents\C#\HomeEasy\HomeEasy\RaspberryGpio\obj\Debug\net6.0\refint\Raspberry.dll
+C:\Users\vitor\Documents\C#\HomeEasy\HomeEasy\RaspberryGpio\obj\Debug\net6.0\Raspberry.pdb
+C:\Users\vitor\Documents\C#\HomeEasy\HomeEasy\RaspberryGpio\obj\Debug\net6.0\ref\Raspberry.dll

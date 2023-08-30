@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "GnjjiwnhzLZIlXGxf8Z4tyC2Emo0KAJ5hc2Zo0WNt0OMJCvzjhqUDq38g/hVWfjOJWDRKQZkJw54egn14oGyyQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\vitor\\Documents\\C#\\HomeEasy\\HomeEasy\\RaspberryGpio\\Raspberry.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\vitor\\.nuget\\packages\\system.device.gpio\\3.0.0\\system.device.gpio.3.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

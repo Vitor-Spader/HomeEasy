@@ -1,0 +1,41 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "Raspberry/1.0.0": {
+        "dependencies": {
+          "System.Device.Gpio": "3.0.0"
+        },
+        "runtime": {
+          "Raspberry.dll": {}
+        }
+      },
+      "System.Device.Gpio/3.0.0": {
+        "runtime": {
+          "lib/net6.0/System.Device.Gpio.dll": {
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.0.23.36310"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Raspberry/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Device.Gpio/3.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-tU+rRrRlAiFj7PKcrr1hjw9QSxBZ2B0w8Pse05nUi0M85p8kSkAJdJExqjd06iW4K15dNjLkR/RO1NMalCRq+Q==",
+      "path": "system.device.gpio/3.0.0",
+      "hashPath": "system.device.gpio.3.0.0.nupkg.sha512"
+    }
+  }
+}
